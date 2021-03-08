@@ -10,7 +10,6 @@ class EmailAddressParser
   end
   
   def parse
-      test = @delimited_string.split(/,\s|\b\s\b/)
-      test.uniq!
+      @delimited_string.split(/,\s|\b\s\b/)
   end
 end
