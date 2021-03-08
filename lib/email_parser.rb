@@ -5,13 +5,13 @@
 require 'pry'
 class EmailAddressParser
   
-  attr_accessor :delimited_string
+  attr_accessor :email_addresses
   
   def initialize(delimited_string)
-    @delimited_string = delimited_string
+    @email_addresses = delimited_string
   end
   
   def parse
-    @delimited_string.split(/,\s|\b\s\b/).uniq
+    @email_addresses.split(/,\s|\b\s\b/).uniq
   end
 end
